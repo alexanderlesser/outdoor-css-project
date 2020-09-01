@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  height: 95vh; /*vh is that the element should be 95% of the viewport height  */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover; /* will always try to fit the element inside of the box */
+  background-position: top; /* Makes sure the img always stays at the top of the container */
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 75vh,
+    0 100%
+  ); /* clip-path is used to cut out a part of the image corner to get the 40 degree angle */
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* We use transform and translate to change x and Y axle so the logo
+      is centered in the middle of the parent element (parent element header) */
+    text-align: center;
+  }
+}

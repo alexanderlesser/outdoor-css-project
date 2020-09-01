@@ -1,0 +1,53 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0; /* Makes element invisible at start*/
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1; /* Makes element fully visible */
+    transform: translate(
+      0
+    ); /* When we translate 0 it will look like it does right now */
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0; /* Makes element invisible at start*/
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1; /* Makes element fully visible */
+    transform: translate(
+      0
+    ); /* When we translate 0 it will look like it does right now */
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0; /* Makes element invisible at start*/
+    transform: translateY(3rem);
+  }
+
+  80% {
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    opacity: 1; /* Makes element fully visible */
+    transform: translate(
+      0
+    ); /* When we translate 0 it will look like it does right now */
+  }
+}
